@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="matematicas.equipo5.usoParentesis">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:max="5"
+        android:progress="1"
+        android:layout_toLeftOf="@+id/textView3" />
+
+    <TextView
+        android:text="Si un paréntesis es precedido por un signo positivo, entonces se puede suprimir sin cambiar los signos de los términos que están dentro de ellos."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/progressBar2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUsoParentesisPositivo"
+        android:src="@drawable/usoparentesispositivo"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/imgUsoParentesisNegativo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver ejemplo"
+        android:id="@+id/btnEjemploParentesisPositivo"
+        android:layout_below="@+id/imgUsoParentesisPositivo"
+        android:layout_alignLeft="@+id/imgUsoParentesisNegativo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En caso contrario, esto es si un paréntesis es precedido por signo negativo, entonces al suprimir el paréntesis los términos que están dentro de él cambian de signo."
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUsoParentesisNegativo"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/usoparentesisnegativo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver ejemplo"
+        android:id="@+id/btnEjemploParentesisNegativo"
+        android:layout_below="@+id/imgUsoParentesisNegativo"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgAvanzar"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnEjemploParentesisNegativo"
+        android:src="@drawable/flechaderecha" />
+
+</RelativeLayout>

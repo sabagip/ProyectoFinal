@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="matematicas.equipo5.EjerciciosParentesis">
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="5"
+        android:progress="2"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/ejercicio2"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="205dp"
+        android:id="@+id/Respuesta"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="¿Cual es el resultado?" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revisar"
+        android:id="@+id/btnRepuesta"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/Respuesta"
+        android:layout_centerHorizontal="true" />
+
+
+
+</LinearLayout>
