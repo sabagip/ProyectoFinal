@@ -52,48 +52,79 @@ public class EjerciciosParentesis5 extends ActionBarActivity {
         Resultado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 variablesaMandar.putInt("progreso", progreso);
 
                 if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
                     Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
 
-                    variablesaMandar.putInt("vidas", vidas);
-                    Intent intent = new Intent(getApplicationContext(), EjerciciosParentesis5.class);
-                    intent.putExtras(variablesaMandar);
-
-                    finish();
-                    startActivity(intent);
-
                 } else {
-                    vidas = vidas -1;
+
+                    vidas = vidas - 1;
+                    variablesaMandar.putInt("vidas", vidas);
+
+                    Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
+
 
                     if (vidas < 0){
                         Toast.makeText(getApplicationContext(),"Has perdido",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), EjerciciosPrimero.class);
-                        intent.putExtras(variablesaMandar);
-
                         finish();
                         startActivity(intent);
                     }
                     else{
-                        Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
-                        variablesaMandar.putInt("vidas", vidas);
-                        Intent intent = new Intent(getApplicationContext(), EjerciciosParentesis5.class);
-                        intent.putExtras(variablesaMandar);
-
-                        finish();
-                        startActivity(intent);
+                        ejercicioAleatorio();
                     }
+
 
                 }
 
-
             }
+
         });
 
 
     }
 
+
+    public void ejercicioAleatorio(){
+
+        // (int)(Math.random()*(HASTA-DESDE+1)+DESDE);
+
+
+        Intent intent;
+        int aleatorio = (int) (Math.random() * (3 + 1) + 2);
+
+        switch (aleatorio){
+            case 2:
+                intent = new Intent(this, EjerciciosParentesis2.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 3:
+                intent = new Intent(this, EjerciciosParentesis3.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 4:
+                intent = new Intent(this, EjerciciosParentesis4.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 5:
+                intent = new Intent(this, EjerciciosParentesis5.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+        }
+    }
 
     public boolean onKeyDown(int keyCode, KeyEvent event){
         if(keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {

@@ -1,5 +1,6 @@
 package matematicas.equipo5;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -23,12 +24,14 @@ public class EjerciciosParentesis extends ActionBarActivity {
     Intent intent;
     ProgressBar barraProgreso;
     int progreso  = 0, vidas = 3;
-    Bundle variablesRecogidas;
+    Bundle variablesaMandar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejercicios_parentesis);
+
+
 
 
         Respuesta = (EditText) findViewById(R.id.Respuesta);
@@ -41,25 +44,23 @@ public class EjerciciosParentesis extends ActionBarActivity {
         Resultado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                variablesRecogidas = new Bundle();
-
+                variablesaMandar = new Bundle();
 
 
 
                     if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
                         Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
+
                     } else {
                         Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
                         vidas = vidas - 1;
+
+
                     }
-                    variablesRecogidas.putInt("progreso", progreso);
-                    variablesRecogidas.putInt("vidas", vidas);
+                    variablesaMandar.putInt("progreso", progreso);
+                    variablesaMandar.putInt("vidas", vidas);
 
-                    intent = new Intent(getApplicationContext(), EjerciciosParentesis2.class);
-                    intent.putExtras(variablesRecogidas);
-                    startActivity(intent);
-
-
+                    ejercicioAleatorio();
             }
 
 
@@ -67,6 +68,45 @@ public class EjerciciosParentesis extends ActionBarActivity {
 
 
 
+    }
+
+    public void ejercicioAleatorio(){
+
+        // (int)(Math.random()*(HASTA-DESDE+1)+DESDE);
+
+
+        Intent intent;
+        int aleatorio = (int) (Math.random() * (3 + 1) + 2);
+
+        switch (aleatorio){
+            case 2:
+                intent = new Intent(this, EjerciciosParentesis2.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 3:
+                intent = new Intent(this, EjerciciosParentesis3.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 4:
+                intent = new Intent(this, EjerciciosParentesis4.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 5:
+                intent = new Intent(this, EjerciciosParentesis5.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+        }
     }
 
 
