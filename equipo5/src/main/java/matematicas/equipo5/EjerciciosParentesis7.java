@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class EjerciciosParentesis7 extends ActionBarActivity {
 
-    String Pregunta = "2+7-2-1-4";
+    String Pregunta = "2";
     EditText Respuesta;
     TextView txtVidas;
     Button Resultado;
@@ -48,40 +48,64 @@ public class EjerciciosParentesis7 extends ActionBarActivity {
             txtVidas.setText(vidas + "");
         }
 
+        if (progreso > 100){
+            final AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
 
-        Resultado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            dialogo.setTitle("¡Felicidades!");
+            dialogo.setMessage("¡¡¡Terminaste exitosamente el curso!!!");
+            dialogo.setCancelable(false);
 
-                variablesaMandar.putInt("progreso", progreso);
-
-                if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
-                    Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
-
-                } else {
-
-                    vidas = vidas - 1;
-                    variablesaMandar.putInt("vidas", vidas);
-
-                    Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
+            dialogo.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    Intent intent = new Intent(getApplicationContext(), EjerciciosPrimero.class);
+                    finish();
+                    startActivity(intent);
+                }
+            });
 
 
-                    if (vidas < 0){
-                        Toast.makeText(getApplicationContext(),"Has perdido",Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), EjerciciosPrimero.class);
-                        finish();
-                        startActivity(intent);
-                    }
-                    else{
+            dialogo.show();
+        }
+
+        else {
+
+            Resultado.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    variablesaMandar.putInt("progreso", progreso);
+
+                    if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
+                        Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
+                        variablesaMandar.putInt("vidas", vidas);
                         ejercicioAleatorio();
+
+                    } else {
+
+                        vidas = vidas - 1;
+                        variablesaMandar.putInt("vidas", vidas);
+
+                        Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
+
+
+                        if (vidas < 0) {
+                            Toast.makeText(getApplicationContext(), "Has perdido", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(), EjerciciosPrimero.class);
+                            finish();
+                            startActivity(intent);
+                        } else {
+                            ejercicioAleatorio();
+                        }
+
+
                     }
 
 
                 }
 
-            }
-
-        });
+            });
+        }
 
 
     }

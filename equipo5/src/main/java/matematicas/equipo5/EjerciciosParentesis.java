@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class EjerciciosParentesis extends ActionBarActivity {
 
-    String Pregunta = "-4+3";
+    String Pregunta = "-1";
     EditText Respuesta;
     Button Resultado;
     Intent intent;
@@ -50,6 +50,7 @@ public class EjerciciosParentesis extends ActionBarActivity {
 
                     if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
                         Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
+
 
                     } else {
                         Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
