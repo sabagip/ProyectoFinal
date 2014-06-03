@@ -1,5 +1,6 @@
 package matematicas.equipo5;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 
@@ -16,27 +17,48 @@ public class EjerciciosParentesis extends ActionBarActivity {
     String Pregunta = "-4+3";
     EditText Respuesta;
     Button Resultado;
+    Intent intent;
+    ProgressBar barraProgreso;
+    int progreso  = 0, vidas = 3;
+    Bundle variablesRecogidas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejercicios_parentesis);
 
-        Respuesta = (EditText)findViewById(R.id.Respuesta);
 
-        Resultado = (Button)findViewById(R.id.btnRepuesta);
+        Respuesta = (EditText) findViewById(R.id.Respuesta);
+        Resultado = (Button) findViewById(R.id.btnRepuesta);
+        barraProgreso = (ProgressBar) findViewById(R.id.progressBar);
+
+        barraProgreso.setMax(100);
+        barraProgreso.setProgress(progreso);
 
         Resultado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                variablesRecogidas = new Bundle();
 
 
 
-                    if(Pregunta.equals(Respuesta.getText().toString())){
-                        Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_LONG).show();
+
+                    if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
+                        Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
+                        vidas = vidas - 1;
                     }
-                    else Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_LONG).show();
-                }
+                    variablesRecogidas.putInt("progreso", progreso);
+                    variablesRecogidas.putInt("vidas", vidas);
+
+                    intent = new Intent(getApplicationContext(), EjerciciosParentesis2.class);
+                    intent.putExtras(variablesRecogidas);
+                    startActivity(intent);
+
+
+            }
+
 
         });
 

@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="matematicas.equipo5.ejercicios_parentesis_2" >
+    tools:context="matematicas.equipo5.EjerciciosParentesis2" >
     
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"

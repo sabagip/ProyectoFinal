@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="C:\Users\hector\Documents\9 semestre\programacion de dispositivos moviles plataforma2\ProyectoFinal-master" />
-            <option value="C:\Users\hector\Documents\9 semestre\programacion de dispositivos moviles plataforma2\ProyectoFinal-master\equipo5" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/equipo5" />
           </set>
         </option>
       </GradleProjectSettings>

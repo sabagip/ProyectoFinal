@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="matematicas.equipo5.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,24 +17,36 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="matematicas.equipo5.GradosdeEscolaridad"
+            android:name=".GradosdeEscolaridad"
             android:label="@string/title_activity_gradosde_escolaridad" >
         </activity>
         <activity
-            android:name="matematicas.equipo5.EjerciciosPrimero"
+            android:name=".EjerciciosPrimero"
             android:label="@string/title_activity_ejercicios_primero" >
         </activity>
         <activity
-            android:name="matematicas.equipo5.usoParentesis"
+            android:name=".usoParentesis"
             android:label="@string/title_activity_uso_parentesis" >
         </activity>
         <activity
-            android:name="matematicas.equipo5.EjerciciosParentesis"
+            android:name=".EjerciciosParentesis"
             android:label="@string/title_activity_ejercicios_parentesis" >
         </activity>
         <activity
-            android:name="matematicas.equipo5.ejercicios_parentesis_2"
+            android:name=".EjerciciosParentesis2"
             android:label="@string/title_activity_ejercicios_parentesis_2" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis3"
+            android:label="@string/title_activity_ejercicios_parentesis3" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis4"
+            android:label="@string/title_activity_ejercicios_parentesis4" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis5"
+            android:label="@string/title_activity_ejercicios_parentesis5" >
         </activity>
     </application>
 
