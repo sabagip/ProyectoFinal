@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -76,6 +77,39 @@ public class EjerciciosParentesis2 extends ActionBarActivity {
 
         });
 
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event){
+        if(keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+
+            final AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
+
+            dialogo.setTitle("¡Alerta! Si sales perderás todo tu avance");
+            dialogo.setMessage("¿Deseas continuar?");
+            dialogo.setCancelable(false);
+
+            dialogo.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    Intent intent = new Intent(getApplicationContext(), EjerciciosPrimero.class);
+                    finish();
+                    startActivity(intent);
+                }
+            });
+
+            dialogo.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogo.setCancelable(true);
+                }
+            });
+
+        dialogo.show();
+
+        return true;
+
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 
