@@ -48,6 +48,46 @@
             android:name=".EjerciciosParentesis5"
             android:label="@string/title_activity_ejercicios_parentesis5" >
         </activity>
+        <activity
+            android:name=".EjerciciosParentesis6"
+            android:label="@string/title_activity_ejercicios_paretesis6" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis7"
+            android:label="@string/title_activity_ejercicio_parentesis7" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis8"
+            android:label="@string/title_activity_ejercicios_parentesis8" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis9"
+            android:label="@string/title_activity_ejercicios_parentesis9" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis10"
+            android:label="@string/title_activity_ejercicios_parentesis10" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis11"
+            android:label="@string/title_activity_ejercicios_parentesis11" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis12"
+            android:label="@string/title_activity_ejercicios_parentesis12" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis13"
+            android:label="@string/title_activity_ejercicios_parentesis13" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis14"
+            android:label="@string/title_activity_ejercicios_parentesis14" >
+        </activity>
+        <activity
+            android:name=".EjerciciosParentesis15"
+            android:label="@string/title_activity_ejercicios_parentesis15" >
+        </activity>
     </application>
 
 </manifest>

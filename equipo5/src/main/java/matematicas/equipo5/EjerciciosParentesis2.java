@@ -31,7 +31,7 @@ public class EjerciciosParentesis2 extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejercicios_parentesis_2);
+        setContentView(R.layout.activity_ejercicios_parentesis2);
 
         Respuesta = (EditText)findViewById(R.id.Respuesta);
         Resultado = (Button)findViewById(R.id.btnRepuesta);
@@ -125,6 +125,77 @@ public class EjerciciosParentesis2 extends ActionBarActivity {
                 finish();
                 startActivity(intent);
                 break;
+
+            case 6:
+                intent = new Intent(this, EjerciciosParentesis6.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 7:
+                intent = new Intent(this, EjerciciosParentesis7.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 8:
+                intent = new Intent(this, EjerciciosParentesis8.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 9:
+                intent = new Intent(this, EjerciciosParentesis9.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 10:
+                intent = new Intent(this, EjerciciosParentesis10.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 11:
+                intent = new Intent(this, EjerciciosParentesis11.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 12:
+                intent = new Intent(this, EjerciciosParentesis12.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 13:
+                intent = new Intent(this, EjerciciosParentesis13.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 14:
+                intent = new Intent(this, EjerciciosParentesis14.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
+            case 15:
+                intent = new Intent(this, EjerciciosParentesis15.class);
+                intent.putExtras(variablesaMandar);
+                finish();
+                startActivity(intent);
+                break;
+
         }
     }
 

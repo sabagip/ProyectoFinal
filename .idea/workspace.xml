@@ -494,7 +494,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/../LlamadayLocalizacion" value="4192883358956" />
-        <entry key="$PROJECT_DIR$" value="4204921813113" />
+        <entry key="$PROJECT_DIR$" value="4204936853631" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -770,11 +770,32 @@
         <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis3.xml" />
         <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis4.xml" />
         <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis5.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_paretesis6.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParetesis6.java" />
         <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis.java" />
         <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis2.java" />
         <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis3.java" />
         <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis4.java" />
         <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis5.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis6.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicio_parentesis7.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjercicioParentesis7.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis8.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis8.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis9.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis9.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis10.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis10.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis11.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis12.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis12.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis11.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis13.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis13.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis14.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis14.java" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis15.xml" />
+        <option value="$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis15.java" />
       </list>
     </option>
   </component>
@@ -881,6 +902,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Matematicas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProyectoFinal" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipo5" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1146,10 +1193,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15291446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5003785" order="7" side_tool="true" content_ui="tabs" />
@@ -1162,13 +1210,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23373677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20045386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15291446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1190,88 +1237,11 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis5.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1258">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#1618#2701#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis_2.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1292">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="1394">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="323">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onKeyDown#0;class#EjerciciosParentesis#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#EjerciciosParentesis#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#EjerciciosParentesis#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="323">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1467,7 +1437,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis_2.xml">
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis2.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
@@ -1516,21 +1486,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis5.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1275">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1106" max-vertical-offset="2074">
-          <caret line="104" column="49" selection-start-line="104" selection-start-column="49" selection-end-line="104" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.48392856" vertical-offset="2704" max-vertical-offset="3281">
+          <caret line="180" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="180" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onKeyDown#0;class#EjerciciosParentesis#0" expanded="false" />
@@ -1542,22 +1501,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57678574" vertical-offset="765" max-vertical-offset="2941">
-          <caret line="77" column="21" selection-start-line="75" selection-start-column="20" selection-end-line="77" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.5732143" vertical-offset="937" max-vertical-offset="2244">
+          <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
           <folding>
-            <element signature="e#1618#2701#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis2#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06428572" vertical-offset="848" max-vertical-offset="2618">
-          <caret line="66" column="60" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.575" vertical-offset="919" max-vertical-offset="2550">
+          <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
           <folding>
-            <element signature="e#1663#2730#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
             <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis3#0" expanded="false" />
           </folding>
         </state>
@@ -1565,11 +1521,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6660714" vertical-offset="715" max-vertical-offset="2261">
-          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.575" vertical-offset="936" max-vertical-offset="2193">
+          <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
           <folding>
-            <element signature="e#1637#2704#0" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
             <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis4#0" expanded="false" />
           </folding>
         </state>
@@ -1577,12 +1531,269 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6660714" vertical-offset="562" max-vertical-offset="2210">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        <state vertical-scroll-proportion="2.1857142" vertical-offset="0" max-vertical-offset="2142">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="197" selection-end-column="5" />
           <folding>
-            <element signature="e#1621#2686#0" expanded="true" />
-            <element signature="e#2674#2675#0" expanded="true" />
             <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis5#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis5.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis6.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.62963" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="55" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis7.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18761726" vertical-offset="699" max-vertical-offset="1275">
+          <caret line="47" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57009345" vertical-offset="1531" max-vertical-offset="3553">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding>
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis6#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66964287" vertical-offset="1631" max-vertical-offset="3570">
+          <caret line="135" column="34" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+          <folding>
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis7#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis8.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53846157" vertical-offset="546" max-vertical-offset="1275">
+          <caret line="49" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033928573" vertical-offset="100" max-vertical-offset="1734">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding>
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis8#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis8#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis9.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5984252" vertical-offset="495" max-vertical-offset="1275">
+          <caret line="47" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis9.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.64" vertical-offset="867" max-vertical-offset="1734">
+          <caret line="230" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="230" selection-end-column="5" />
+          <folding>
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis9#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis10.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9230769" vertical-offset="699" max-vertical-offset="1275">
+          <caret line="47" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis10.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.12" vertical-offset="204" max-vertical-offset="816">
+          <caret line="230" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="230" selection-end-column="5" />
+          <folding>
+            <element signature="method#onCreate#0;class#EjerciciosParentesis10#0" expanded="false" />
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis10#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis11.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19685039" vertical-offset="699" max-vertical-offset="1275">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis12.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7037036" vertical-offset="699" max-vertical-offset="1275">
+          <caret line="47" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#231#266#0" expanded="false" />
+            <element signature="e#292#327#0" expanded="false" />
+            <element signature="e#351#384#0" expanded="false" />
+            <element signature="e#411#444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6375" vertical-offset="0" max-vertical-offset="816">
+          <caret line="230" column="5" selection-start-line="20" selection-start-column="3" selection-end-line="230" selection-end-column="5" />
+          <folding>
+            <element signature="method#onCreate#0;class#EjerciciosParentesis12#0" expanded="false" />
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis12#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis12#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis13.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9230769" vertical-offset="699" max-vertical-offset="1292">
+          <caret line="47" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis13.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.28" vertical-offset="0" max-vertical-offset="833">
+          <caret line="230" column="5" selection-start-line="20" selection-start-column="2" selection-end-line="230" selection-end-column="5" />
+          <folding>
+            <element signature="method#onCreate#0;class#EjerciciosParentesis13#0" expanded="false" />
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis13#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis14.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5961539" vertical-offset="716" max-vertical-offset="1292">
+          <caret line="47" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/res/layout/activity_ejercicios_parentesis15.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16338582" vertical-offset="716" max-vertical-offset="1292">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3053571" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="58" column="86" selection-start-line="58" selection-start-column="86" selection-end-line="58" selection-end-column="86" />
+          <folding>
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis11#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis15.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66785717" vertical-offset="0" max-vertical-offset="850">
+          <caret line="231" column="5" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
+          <folding>
+            <element signature="method#onCreate#0;class#EjerciciosParentesis15#0" expanded="false" />
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis15#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo5/src/main/java/matematicas/equipo5/EjerciciosParentesis14.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6375" vertical-offset="0" max-vertical-offset="833">
+          <caret line="230" column="5" selection-start-line="19" selection-start-column="0" selection-end-line="230" selection-end-column="5" />
+          <folding>
+            <element signature="method#onCreate#0;class#EjerciciosParentesis14#0" expanded="false" />
+            <element signature="method#ejercicioAleatorio#0;class#EjerciciosParentesis14#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#EjerciciosParentesis14#0" expanded="false" />
           </folding>
         </state>
       </provider>
