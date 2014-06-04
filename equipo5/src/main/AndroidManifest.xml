@@ -92,6 +92,14 @@
             android:name=".usoSignos"
             android:label="@string/title_activity_uso_signos" >
         </activity>
+        <activity
+            android:name=".EjerciciosSignos"
+            android:label="@string/title_activity_ejercicios_signos" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos2"
+            android:label="@string/title_activity_ejercicios_signos2" >
+        </activity>
     </application>
 
 </manifest>

@@ -29,7 +29,7 @@ public class EjerciciosParentesis13 extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejercicios_parentesis6);
+        setContentView(R.layout.activity_ejercicios_parentesis13);
 
         Respuesta = (EditText)findViewById(R.id.Respuesta);
         Resultado = (Button)findViewById(R.id.btnRepuesta);

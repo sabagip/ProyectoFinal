@@ -9,8 +9,101 @@
     tools:context="matematicas.equipo5.usoSignos">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="Los números con signos iguales se suman y se deja el signo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUsoSignosIguales"
+        android:src="@drawable/usosignosiguales"
+        android:layout_marginLeft="44dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Los números con signos diferentes se restan y se deja el signo del número mayor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/btnSignosIguales"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="59dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUsoSignosDiferentes"
+        android:src="@drawable/usosignosdiferentes"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/btnSignosIguales"
+        android:layout_alignEnd="@+id/btnSignosIguales"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUsoSignosIguales3"
+        android:src="@drawable/usosignosiguales3"
+        android:layout_alignTop="@+id/imgUsoSignosIguales"
+        android:layout_toRightOf="@+id/imgUsoSignosIguales"
+        android:layout_marginLeft="35dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUsoSignosDiferentes3"
+        android:layout_alignTop="@+id/imgUsoSignosDiferentes"
+        android:layout_alignLeft="@+id/imgUsoSignosIguales3"
+        android:layout_alignStart="@+id/imgUsoSignosIguales3"
+        android:src="@drawable/usosignosdiferentes3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver ejemplo"
+        android:id="@+id/btnSignosIguales"
+        android:layout_below="@+id/imgUsoSignosIguales"
+        android:layout_toLeftOf="@+id/imgUsoSignosIguales3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver ejemplo"
+        android:id="@+id/btnSignosIguales2"
+        android:layout_alignBottom="@+id/btnSignosIguales"
+        android:layout_alignLeft="@+id/imgUsoSignosIguales3"
+        android:layout_alignStart="@+id/imgUsoSignosIguales3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver ejemplo"
+        android:id="@+id/btnSignoDiiferentes"
+        android:layout_below="@+id/imgUsoSignosDiferentes"
+        android:layout_alignLeft="@+id/imgUsoSignosDiferentes"
+        android:layout_alignStart="@+id/imgUsoSignosDiferentes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver ejemplo"
+        android:id="@+id/btnSignosDiferentes2"
+        android:layout_alignTop="@+id/btnSignoDiiferentes"
+        android:layout_alignLeft="@+id/imgUsoSignosDiferentes3"
+        android:layout_alignStart="@+id/imgUsoSignosDiferentes3" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAvanzar"
+        android:src="@drawable/flechaderecha"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

@@ -7,10 +7,17 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 
 public class EjerciciosPrimero extends ActionBarActivity {
@@ -18,7 +25,10 @@ public class EjerciciosPrimero extends ActionBarActivity {
     ImageButton imgUsoParentesis, imgUsoSignos;
     Intent intent;
 
-    boolean avancesUsoParentesis;
+    public static final String  TAG =
+            EjerciciosPrimero.class.getSimpleName();
+
+    String avancesUsoParentesis, avancesUsoSignos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +39,28 @@ public class EjerciciosPrimero extends ActionBarActivity {
         imgUsoParentesis = (ImageButton) findViewById(R.id.imgUsoParentesis);
         imgUsoSignos = (ImageButton) findViewById(R.id.imgUsoSignos);
 
+        SharedPreferences sharedPreferences;
+        sharedPreferences = this.getPreferences(Context.MODE_PRIVATE);
 
-        avancesUsoParentesis = leerAvancesParentesis();
 
-        if(avancesUsoParentesis){
+
+        avancesUsoSignos = leerAvancesSignos();
+
+        if (avancesUsoSignos.equals("1")) {
             imgUsoParentesis.setEnabled(true);
         }
         else {
             imgUsoParentesis.setEnabled(false);
+
         }
+
 
 
         imgUsoSignos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 intent = new Intent(getApplicationContext(), usoSignos.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -54,6 +71,7 @@ public class EjerciciosPrimero extends ActionBarActivity {
             @Override
             public void onClick(View view) {
                 intent = new Intent(getApplicationContext(), usoParentesis.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -67,6 +85,34 @@ public class EjerciciosPrimero extends ActionBarActivity {
 
         avances = sharedPreferences.getBoolean("completadoUsoParentensis", false);
         return avances;
+    }
+
+    public String leerAvancesSignos(){
+        String nombre = "";
+
+        try{
+
+            FileInputStream fileInputStream = openFileInput("Avances");
+
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream, "UTF-8"), 8);
+
+            StringBuilder sBuilder = new StringBuilder();
+
+            String line= null;
+
+            while((line = bufferedReader.readLine()) != null ){
+                sBuilder.append(line);
+                nombre = sBuilder.toString();
+
+
+                Log.d(TAG, nombre);
+            }
+
+        }
+        catch (FileNotFoundException e){}
+        catch (IOException e){}
+
+        return  nombre;
     }
 
 

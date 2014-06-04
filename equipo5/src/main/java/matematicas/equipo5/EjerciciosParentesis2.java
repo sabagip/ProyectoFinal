@@ -131,9 +131,22 @@ public class EjerciciosParentesis2 extends ActionBarActivity {
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.putBoolean("completadoUsoParentensis", true);
+        //editor.putBoolean("completadoUsoParentensis", true);
 
         editor.commit();
+
+        try{
+            String avanceParentesis = "1";
+
+            FileOutputStream fileOutputStream = openFileOutput("Avances", Context.MODE_PRIVATE);
+
+            fileOutputStream.write(avanceParentesis.getBytes());
+
+            fileOutputStream.close();
+        }
+
+        catch (FileNotFoundException e) {}
+        catch (IOException e) {}
     }
 
 
