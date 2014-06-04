@@ -88,6 +88,10 @@
             android:name=".EjerciciosParentesis15"
             android:label="@string/title_activity_ejercicios_parentesis15" >
         </activity>
+        <activity
+            android:name=".usoSignos"
+            android:label="@string/title_activity_uso_signos" >
+        </activity>
     </application>
 
 </manifest>

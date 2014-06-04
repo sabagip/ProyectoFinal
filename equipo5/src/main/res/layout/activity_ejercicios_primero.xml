@@ -11,8 +11,20 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/usoParentesis"
-        android:src="@drawable/parentesis" />
+        android:id="@+id/imgUsoParentesis"
+        android:src="@drawable/parentesis"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgUsoSignos"
+        android:src="@drawable/portadasignos"
+        android:layout_marginRight="42dp"
+        android:layout_alignBottom="@+id/imgUsoParentesis"
+        android:layout_toLeftOf="@+id/imgUsoParentesis" />
 
 
 </RelativeLayout>
