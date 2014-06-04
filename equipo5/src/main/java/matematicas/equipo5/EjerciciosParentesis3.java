@@ -3,6 +3,7 @@ package matematicas.equipo5;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.preference.DialogPreference;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -53,6 +54,8 @@ public class EjerciciosParentesis3 extends ActionBarActivity {
 
 
         if (progreso > 100){
+            tonoModuloTerminadoCorrectamente();
+
             final AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
 
             dialogo.setTitle("¡Felicidades!");
@@ -81,6 +84,7 @@ public class EjerciciosParentesis3 extends ActionBarActivity {
                     variablesaMandar.putInt("progreso", progreso);
 
                     if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
+                        tonoejercicioCorrecto();
                         Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
                         variablesaMandar.putInt("vidas", vidas);
                         ejercicioAleatorio();
@@ -94,11 +98,13 @@ public class EjerciciosParentesis3 extends ActionBarActivity {
 
 
                         if (vidas < 0) {
+                            tonoModuloTerminadoIncorrectamente();
                             Toast.makeText(getApplicationContext(), "Has perdido", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(), EjerciciosPrimero.class);
                             finish();
                             startActivity(intent);
                         } else {
+                            tonoejercicioErroneo();
                             ejercicioAleatorio();
                         }
 
@@ -118,7 +124,7 @@ public class EjerciciosParentesis3 extends ActionBarActivity {
 
 
         Intent intent;
-        int aleatorio = (int) (Math.random() * (3 + 1) + 2);
+        int aleatorio = (int) (Math.random() * (13 + 1) + 2);
 
         switch (aleatorio){
             case 2:
@@ -257,25 +263,49 @@ public class EjerciciosParentesis3 extends ActionBarActivity {
     }
 
 
-   /* public void regresar(int vidas){
-        if (vidas < 0){
-            AlertDialog mensaje = new AlertDialog.Builder(getApplicationContext()).create();
-            mensaje.setTitle("Lo sentimos");
-            mensaje.setMessage("Se te acabaron las vidas");
-            mensaje.setButton("Continuar", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    finish();
+    private void tonoejercicioCorrecto() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.ejercicio_correcto);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
 
-                    Intent intent1 = new Intent(getApplicationContext(), EjerciciosPrimero.class);
+    private void tonoejercicioErroneo() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.ejercicio_erroneo);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
 
-                    startActivity(intent1);
-                }
-            });
-            mensaje.show();
+    private void tonoModuloTerminadoCorrectamente() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.modulo_terminado);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
 
-        }
-    }*/
+    private void tonoModuloTerminadoIncorrectamente() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.modulo_perdido);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
 
 
     @Override

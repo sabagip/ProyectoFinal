@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -55,6 +56,7 @@ public class EjerciciosSignos8 extends ActionBarActivity {
         }
 
         if (progreso > 100) {
+            tonoModuloTerminadoCorrectamente();
             guardarMemoriaInterna();
 
 
@@ -84,6 +86,7 @@ public class EjerciciosSignos8 extends ActionBarActivity {
                     variablesaMandar.putInt("progreso", progreso);
 
                     if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
+                        tonoejercicioCorrecto();
                         Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
                         variablesaMandar.putInt("vidas", vidas);
                         ejercicioAleatorio();
@@ -97,11 +100,13 @@ public class EjerciciosSignos8 extends ActionBarActivity {
 
 
                         if (vidas < 0) {
+                            tonoModuloTerminadoIncorrectamente();
                             Toast.makeText(getApplicationContext(), "Has perdido", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(), EjerciciosPrimero.class);
                             finish();
                             startActivity(intent);
                         } else {
+                            tonoejercicioErroneo();
                             ejercicioAleatorio();
                         }
 
@@ -141,15 +146,15 @@ public class EjerciciosSignos8 extends ActionBarActivity {
     }
 
 
-    public void ejercicioAleatorio() {
+    public void ejercicioAleatorio(){
 
         // (int)(Math.random()*(HASTA-DESDE+1)+DESDE);
 
 
         Intent intent;
-        int aleatorio = (int) (Math.random() * (3 + 1) + 2);
+        int aleatorio = (int) (Math.random() * (13 + 1) + 2);
 
-        switch (aleatorio) {
+        switch (aleatorio){
             case 2:
                 intent = new Intent(this, EjerciciosSignos2.class);
                 intent.putExtras(variablesaMandar);
@@ -247,6 +252,7 @@ public class EjerciciosSignos8 extends ActionBarActivity {
                 finish();
                 startActivity(intent);
                 break;
+
         }
     }
 
@@ -282,6 +288,50 @@ public class EjerciciosSignos8 extends ActionBarActivity {
 
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    private void tonoejercicioCorrecto() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.ejercicio_correcto);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
+
+    private void tonoejercicioErroneo() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.ejercicio_erroneo);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
+
+    private void tonoModuloTerminadoCorrectamente() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.modulo_terminado);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
+
+    private void tonoModuloTerminadoIncorrectamente() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.modulo_perdido);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
     }
 
 

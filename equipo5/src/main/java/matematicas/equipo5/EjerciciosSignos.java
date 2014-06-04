@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -54,6 +55,7 @@ public class EjerciciosSignos extends ActionBarActivity {
 
 
                 if (Pregunta.equals(Respuesta.getText().toString().replace(" ", ""))) {
+                    tonoejercicioCorrecto();
                     Toast.makeText(getApplicationContext(), "CORRECTO!", Toast.LENGTH_SHORT).show();
 
                     Intent intent1 = new Intent(getApplicationContext(), EjerciciosPrimero.class);
@@ -61,6 +63,7 @@ public class EjerciciosSignos extends ActionBarActivity {
                     startActivity(intent1);
 
                 } else {
+                    tonoejercicioErroneo();
                     Toast.makeText(getApplicationContext(), "INCORRECTO!", Toast.LENGTH_SHORT).show();
                     vidas = vidas - 1;
 
@@ -85,7 +88,7 @@ public class EjerciciosSignos extends ActionBarActivity {
 
 
         Intent intent;
-        int aleatorio = (int) (Math.random() * (3 + 1) + 2);
+        int aleatorio = (int) (Math.random() * (13 + 1) + 2);
 
         switch (aleatorio){
             case 2:
@@ -245,6 +248,50 @@ public class EjerciciosSignos extends ActionBarActivity {
         }
         catch (FileNotFoundException e) {}
         catch (IOException e) {}
+    }
+
+    private void tonoejercicioCorrecto() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.ejercicio_correcto);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
+
+    private void tonoejercicioErroneo() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.ejercicio_erroneo);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
+
+    private void tonoModuloTerminadoCorrectamente() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.modulo_terminado);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }
+
+    private void tonoModuloTerminadoIncorrectamente() {
+        MediaPlayer reproductor = MediaPlayer.create(this, R.raw.modulo_perdido);
+        reproductor.start();
+        reproductor.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
     }
 
 
