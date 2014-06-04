@@ -11,14 +11,25 @@ import android.widget.ImageButton;
 
 public class EjerciciosPrimero extends ActionBarActivity {
 
-    ImageButton imgUsoParentesis;
+    ImageButton imgUsoParentesis, imgUsoSignos;
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejercicios_primero);
 
-       imgUsoParentesis = (ImageButton) findViewById(R.id.usoParentesis);
+        imgUsoParentesis = (ImageButton) findViewById(R.id.imgUsoParentesis);
+        imgUsoSignos = (ImageButton) findViewById(R.id.imgUsoSignos);
+
+
+
+        imgUsoSignos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getApplicationContext(), usoSignos.class);
+                startActivity(intent);
+            }
+        });
 
         imgUsoParentesis.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,10 +38,6 @@ public class EjerciciosPrimero extends ActionBarActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 
 
