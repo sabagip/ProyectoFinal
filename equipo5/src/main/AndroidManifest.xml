@@ -100,6 +100,58 @@
             android:name=".EjerciciosSignos2"
             android:label="@string/title_activity_ejercicios_signos2" >
         </activity>
+        <activity
+            android:name=".EjerciciosSignos3"
+            android:label="@string/title_activity_ejercicios_signos3" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos4"
+            android:label="@string/title_activity_ejercicios_signos4" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos5"
+            android:label="@string/title_activity_ejercicios_signos5" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos6"
+            android:label="@string/title_activity_ejercicios_signos6" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos7"
+            android:label="@string/title_activity_ejercicios_signos7" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos8"
+            android:label="@string/title_activity_ejercicios_signos8" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos9"
+            android:label="@string/title_activity_ejercicios_signos9" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos10"
+            android:label="@string/title_activity_ejercicios_signos10" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos11"
+            android:label="@string/title_activity_ejercicios_signos11" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos12"
+            android:label="@string/title_activity_ejercicios_signos12" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos13"
+            android:label="@string/title_activity_ejercicios_signos13" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos14"
+            android:label="@string/title_activity_ejercicios_signos14" >
+        </activity>
+        <activity
+            android:name=".EjerciciosSignos15"
+            android:label="@string/title_activity_ejercicios_signos15" >
+        </activity>
     </application>
 
 </manifest>

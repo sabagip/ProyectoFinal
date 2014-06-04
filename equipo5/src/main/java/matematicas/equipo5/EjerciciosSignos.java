@@ -84,7 +84,7 @@ public class EjerciciosSignos extends ActionBarActivity {
         // (int)(Math.random()*(HASTA-DESDE+1)+DESDE);
 
 
-       /* Intent intent;
+        Intent intent;
         int aleatorio = (int) (Math.random() * (3 + 1) + 2);
 
         switch (aleatorio){
@@ -110,7 +110,7 @@ public class EjerciciosSignos extends ActionBarActivity {
                 break;
 
             case 5:
-                intent = new Intent(this, EjerciciosParentesis5.class);
+                intent = new Intent(this, EjerciciosSignos5.class);
                 intent.putExtras(variablesaMandar);
                 finish();
                 startActivity(intent);
@@ -186,7 +186,7 @@ public class EjerciciosSignos extends ActionBarActivity {
                 startActivity(intent);
                 break;
 
-        }*/
+        }
     }
 
 
